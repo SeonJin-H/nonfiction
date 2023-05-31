@@ -6,7 +6,7 @@ Demo: <http://hwang1404.dothome.co.kr>
 
 
 ### 🖥️ 개발 목표
-* CSS 클래스 부여 및 스타일 적요 연습
+* CSS 클래스 부여 및 스타일 적용 연습
 * 제이쿼리의 다양한 메소드 사용 및 작동 방식 이해
 * 미디어 쿼리를 이용한 반응형 웹페이지 구축
 
@@ -83,5 +83,5 @@ $('footer button.btn_toTop').click(function(){
 
 
 ### 💡 개선 사항
-* new/best 자세히보기 버튼에 hover 이벤트 추가 필요
-* 모바일 모드 시 최하단 슬라이드 이동값 해결 필요
+* header 영역 hover 이벤트 색상 변경 필요
+* footer 영역 여백 재설정 필요
