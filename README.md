@@ -1,5 +1,5 @@
 # Markup-Project-Nonfiction
-자바스크립트 및 제이쿼리를 이용한 반응형 웹사이트 구축(개인프로젝트)
+스크립트를 적용한 반응형 웹사이트 구축(개인프로젝트)
 
 ![목업](https://github.com/SeonJin-H/nonfiction/blob/main/nonfiction_mockup.png)
 Demo: <http://hwang1404.dothome.co.kr>
@@ -19,7 +19,7 @@ Demo: <http://hwang1404.dothome.co.kr>
 
 
 ### 💎 주요 기능
-* 제이쿼리에서 스크로 이벤트를 이용한 동적 효과 중첩 적용
+* 제이쿼리 스크로 이벤트를 이용한 동적 효과 중첩 적용
 ![작동예시](https://github.com/SeonJin-H/nonfiction/blob/main/scroll01.png)
 ~~~
 var elem1 ="";
