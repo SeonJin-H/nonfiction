@@ -86,3 +86,7 @@ $('footer button.btn_toTop').click(function(){
 ### 💡 개선 사항
 * header 영역 hover 이벤트 색상 변경 필요
 * footer 영역 여백 재설정 필요
+
+### 🖥️ 작업 기여
+* 웹사이트 전체 구축
+* 기여도 100%
