@@ -96,28 +96,66 @@ language.addEventListener("click", function(){
 /*
 var SWITCH = false;
 $('header button.btn_M').click(function(){ 헤더색상변화
-$('header .gnb_M').toggleClass('on');
-$('header').toggleClass('white');
-$('header button.btn_M>span').toggleClass('on');
-$('header .side_M>ul>li>p.num').toggleClass('on');
-if(SWITCH == false){  검은색으로
-    SWITCH = true;
-    $('header .inner_header>h1>a>img').attr('src','imgs/half_logo_B.png');
-    $('header .side_M>ul>li>a>img.a').attr('src','imgs/icon-account-B.png');
-    $('header .side_M>ul>li>a>img.c').attr('src','imgs/icon-cart-B.png');
-}else{  흰색으로
-    SWITCH = false;
-    $('header .inner_header>h1>a>img').attr('src','imgs/half_logo_W.png');
-    $('header .side_M>ul>li>a>img.a').attr('src','imgs/icon-account.png');
-    $('header .side_M>ul>li>a>img.c').attr('src','imgs/icon-cart.png');
-}
+    $('header .gnb_M').toggleClass('on');
+    $('header').toggleClass('white');
+    $('header button.btn_M>span').toggleClass('on');
+    $('header .side_M>ul>li>p.num').toggleClass('on');
+    if(SWITCH == false){  검은색으로
+        SWITCH = true;
+        $('header .inner_header>h1>a>img').attr('src','imgs/half_logo_B.png');
+        $('header .side_M>ul>li>a>img.a').attr('src','imgs/icon-account-B.png');
+        $('header .side_M>ul>li>a>img.c').attr('src','imgs/icon-cart-B.png');
+    }else{  흰색으로
+        SWITCH = false;
+        $('header .inner_header>h1>a>img').attr('src','imgs/half_logo_W.png');
+        $('header .side_M>ul>li>a>img.a').attr('src','imgs/icon-account.png');
+        $('header .side_M>ul>li>a>img.c').attr('src','imgs/icon-cart.png');
+    }
 });
 $('header .gnb_M>ul>li>a.m').click(function(){ 서브메뉴
-$(this).next().slideToggle();
-$(this).parent().siblings().find('ul').slideUp();
+    $(this).next().slideToggle();
+    $(this).parent().siblings().find('ul').slideUp();
 });
 */
+let SWITCH = false;
+let btnMenu = document.querySelector("header button.btn_M");
 
+btnMenu.addEventListener("click", function(){
+    let header = document.querySelector("header");
+    let gnbMo = document.querySelector("header .gnb_M");
+    let cartNum = document.querySelector("header .side_M>ul>li>p.num");
+    let gnbSpan = document.querySelectorAll("header button.btn_M>span");
+
+    header.classList.toggle("white");  //bg
+    gnbMo.classList.toggle("on");      //gnb area
+    cartNum.classList.toggle("on");       //cart number
+
+    for (i=0; i<3; i++) {
+        gnbSpan[i].classList.toggle("on");   //burger stack
+    }
+    
+    let logo = document.querySelector("header .inner_header>h1>a>img");
+    let account = document.querySelector("header .side_M>ul>li>a>img.a");
+    let cart = document.querySelector("header .side_M>ul>li>a>img.c");
+
+    //console.log(logo.src);
+    //console.log(account.src);
+    //console.log(cart.src);
+
+    if (SWITCH == false) {
+        SWITCH = true;
+        logo.src = "imgs/half_logo_B.png";
+        account.src = "imgs/icon-account-B.png";
+        cart.src = "imgs/icon-cart-B.png";
+    }
+    else {
+        SWITCH = false;
+        logo.src = "imgs/half_logo_W.png";
+        account.src = "imgs/icon-account.png";
+        cart.src = "imgs/icon-cart.png";
+    }
+
+});
 
 /*mainVisual 1,2 *******************************************/ 
 /*
@@ -142,14 +180,29 @@ $(function(){
 const body = document.getElementsByTagName("body")[0];
 const banner01 = document.querySelector("main>section.banner01>a>img");
 const banner02 = document.querySelector("main>section.banner02>a>img");
-const Img01 = banner01.getAttribute("src"); 
-const Img02 = banner02.getAttribute("src");
+//console.log(banner01.src);
 
-/*
+let innerWidth = window.innerWidth;
+if (innerWidth < 800) {
+    banner01.src = "imgs/FRmo1.jpg";
+    banner02.src = "imgs/FRmo2.jpg";
+} 
+else {
+    banner01.src = "imgs/FRpc1.jpg";
+    banner02.src = "imgs/FRpc2.jpg";
+}
 window.onresize = function () {
     let innerWidth = window.innerWidth;
-    innerWidth <= "800" ?  body.style.color = "red" : body.style.color = "green";
-}*/
+    if (innerWidth < 800) {
+        banner01.src = "imgs/FRmo1.jpg";
+        banner02.src = "imgs/FRmo2.jpg";
+    } 
+    else {
+        banner01.src = "imgs/FRpc1.jpg";
+        banner02.src = "imgs/FRpc2.jpg";
+    }
+}
+
 
 
 /*btn_toTop *******************************************/ 
