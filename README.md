@@ -1,7 +1,7 @@
 # Markup-Project-Nonfiction
 스크립트를 적용한 반응형 웹사이트 구축(개인프로젝트)
 
-![목업](https://github.com/SeonJin-H/nonfiction/blob/main/nonfiction_mockup.png)
+(https://github.com/SeonJin-H/nonfiction/blob/main/nonfiction_mockup.png)
 Demo: <http://hwang1404.dothome.co.kr>
 
 
