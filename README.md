@@ -20,7 +20,7 @@ Demo: <http://hwang1404.dothome.co.kr>
 
 ### 💎 주요 기능
 * 스크롤 이벤트를 이용한 동적 효과 중첩 적용
-![작동예시](https://github.com/SeonJin-H/nonfiction/blob/main/scroll01.png)
+![작동예시](https://github.com/SeonJin-H/nonfiction/blob/master/scroll01.png)
 ~~~
 let elem1 = "";
 let elem2 = "";
@@ -48,7 +48,7 @@ window.addEventListener('scroll', function(){
     });
 });
 ~~~
-![작동예시](https://github.com/SeonJin-H/nonfiction/blob/main/scroll02.png)
+![작동예시](https://github.com/SeonJin-H/nonfiction/blob/master/scroll02.png)
 ~~~
 let btnTop = document.querySelector("footer button.btn_toTop");
 
@@ -70,9 +70,9 @@ btnTop.addEventListener("click", function() {
 });
 ~~~
 
-* 속성값 변환을 이용한 모바일 및 pc 모드 헤더 스타일 변환
-![작동예시1](https://github.com/SeonJin-H/nonfiction/blob/main/header_c01.png)
-![작동예시2](https://github.com/SeonJin-H/nonfiction/blob/main/header_c02.png)
+* 속성값 변환을 이용한 모바일 모드 헤더 스타일 변환
+![작동예시1](https://github.com/SeonJin-H/nonfiction/blob/master/header_c01.png)
+![작동예시2](https://github.com/SeonJin-H/nonfiction/blob/master/header_c02.png)
 * 메인 영역 CSS 필터 스타일 적용
 * 미디어 쿼리를 이용한 전체 페이지 개발
 
